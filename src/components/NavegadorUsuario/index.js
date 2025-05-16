@@ -1,0 +1,1 @@
+export { NavegadorUsuario } from './NavegadorUsuario';
