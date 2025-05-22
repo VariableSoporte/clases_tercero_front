@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Base.css';
 import PropTypes from 'prop-types';
+import { BotonAceptar } from '../../components/BotonAceptar/BotonAceptar';
 
 export const Base = ({ }) => {
 	const [poliza, setPoliza] = useState([]);
@@ -48,6 +49,7 @@ export const Base = ({ }) => {
 	};
 	return (
 		<div className='base'>
+			<BotonAceptar texto={"boton base"} />
 			{poliza.map((u) => {
 				return (
 				<div>
