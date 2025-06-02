@@ -1,0 +1,1 @@
+export { ModalAgregar } from './ModalAgregar';

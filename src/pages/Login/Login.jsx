@@ -73,8 +73,8 @@ export const Login = ({ }) => {
 
 			if (response.ok) {
 				console.log("Login exitoso:", data);
-				setUsuario({ ...usuario, nombre: data.usuario.nombres }); // Guarda los datos en el context
-				//navigate('/home', { replace: true });
+				setUsuario({ ...usuario, nombre: data.usuario.nombres, activo:data.usuario.activo, id_usuario: data.usuario.id_usuario }); // Guarda los datos en el context
+				navigate('/home2', { replace: true });
 			} else {
 				alert(data.mensaje || "Error en login");
 			}

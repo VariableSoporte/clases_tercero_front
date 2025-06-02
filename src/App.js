@@ -7,10 +7,10 @@ import { Base } from "./pages/Base";
 
 
 function App() {
-  const saludar = ()=>{
+  const saludar = () => {
     console.log("hola desde el app.js")
   };
-  const saludar2 = ()=>{
+  const saludar2 = () => {
     console.log("hola desde el app.js 2")
   };
   return (
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </UserProvider>
-     
+
 
     </div>
   );
